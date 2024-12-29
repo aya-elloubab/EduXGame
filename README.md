@@ -16,7 +16,7 @@ EduGame is a gamified micro-learning platform aimed at enhancing student engagem
 - [🔙 Backend](#-backend)
 - [🚀 Getting Started](#-getting-started)
 - [✨ Features](#-features)
-- [🎬 App Demo Video](#-demo-video)
+- [🎬 App Demo Video](#app-demo-video)
 - [🤝 Contributing](#-contributing)
 - [🌟 Future Enhancements](#-future-enhancements)
 - [📜 License](#-license)
