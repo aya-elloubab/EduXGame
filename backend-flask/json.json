@@ -1,0 +1,10 @@
+{"chapterName":"title",
+"desciption":"short desription of the chapter ",
+"quiz":[{"question":"question 1",
+"answers":["answer1","ansewer2","anwser3","anwser4"],
+"correctAnsewer":["anwser2"]
+}],
+"flipcards":[{"front":"word1","back":"definition or description or caractiristic"}],
+"match":[{"element":"element to match","element":"coorect match"}],
+"shortContent":["content1 short content must know about a small chapter part","content2 new short content must know about a next small chapter part"]
+}

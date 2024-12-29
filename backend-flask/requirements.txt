@@ -1,0 +1,14 @@
+flask
+gunicorn
+langchain
+langchain-community
+langchain-core
+langsmith
+langchain-openai
+openai
+PyPDF2
+python-dotenv
+faiss-cpu
+tiktoken
+werkzeug
+flask-cors
