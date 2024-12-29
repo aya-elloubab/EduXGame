@@ -24,18 +24,7 @@
                 android:orientation="horizontal"
                 android:padding="16dp">
 
-                <!-- Avatar -->
-                <ImageView
-                    android:id="@+id/profileAvatar"
-                    android:layout_width="80dp"
-                    android:layout_height="80dp"
-                    android:src="@drawable/ic_launcher_background"
-                    android:contentDescription="Profile Avatar"
-                    android:layout_marginEnd="16dp"
-                    android:scaleType="centerCrop"
-                    android:background="?attr/colorSurfaceVariant"
-                    android:elevation="4dp"
-                    android:clipToOutline="true" />
+
 
                 <!-- Profile Details -->
                 <LinearLayout
@@ -67,7 +56,7 @@
                         android:id="@+id/changeAvatarButton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Change Avatar"
+                        android:text="Update Profile"
                         app:cornerRadius="8dp"
                         app:icon="@drawable/ic_edit"
                         app:iconGravity="textStart"

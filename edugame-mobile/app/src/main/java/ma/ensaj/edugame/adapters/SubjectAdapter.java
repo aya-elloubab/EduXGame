@@ -76,13 +76,20 @@ public class SubjectAdapter extends RecyclerView.Adapter<SubjectAdapter.SubjectV
                 public void onResponse(Call<Double> call, Response<Double> response) {
                     if (response.isSuccessful() && response.body() != null) {
                         double progress = response.body();
-                        holder.subjectProgressBar.setProgress((int) progress);
-                        holder.subjectProgressText.setText(progress + "%");
+                        double roundedProgress = Math.round(progress * 100.0) / 100.0;
+
+                        // Convert the rounded progress to an integer for ProgressBar (0 to 100)
+                        int progressInt = (int) (roundedProgress);
+
+                        // Set the progress in the ProgressBar and the text
+                        holder.subjectProgressBar.setProgress(progressInt);
+                        holder.subjectProgressText.setText(String.format("%.2f%%", roundedProgress));
                     } else {
                         holder.subjectProgressBar.setProgress(0);
                         holder.subjectProgressText.setText("N/A");
                     }
                 }
+
 
                 @Override
                 public void onFailure(Call<Double> call, Throwable t) {

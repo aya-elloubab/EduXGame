@@ -110,7 +110,7 @@ public class ChapterOptionsFragment extends Fragment {
 
     private void setupOptions() {
         List<ChapterOption> options = new ArrayList<>();
-        options.add(new ChapterOption("Course", R.drawable.quizz));
+        options.add(new ChapterOption("Course", R.drawable.course));
         options.add(new ChapterOption("Quiz", R.drawable.quizz));
         options.add(new ChapterOption("Match Game", R.drawable.match));
         options.add(new ChapterOption("Flash Cards", R.drawable.flash_card));

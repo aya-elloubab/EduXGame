@@ -55,7 +55,6 @@ public class SettingsFragment extends Fragment {
         apiService = RetrofitClient.getInstance().create(ApiService.class);
 
         // Initialize Views
-        profileAvatar = view.findViewById(R.id.profileAvatar);
         profileName = view.findViewById(R.id.profileName);
         profileEmail = view.findViewById(R.id.profileEmail);
 
