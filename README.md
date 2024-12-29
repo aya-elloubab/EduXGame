@@ -16,7 +16,7 @@ EduGame is a gamified micro-learning platform aimed at enhancing student engagem
 - [🔙 Backend](#-backend)
 - [🚀 Getting Started](#-getting-started)
 - [✨ Features](#-features)
-- [🎬 Demo Video](#-demo-video)
+- [🎬 App Demo Video](#-demo-video)
 - [🤝 Contributing](#-contributing)
 - [🌟 Future Enhancements](#-future-enhancements)
 - [📜 License](#-license)
@@ -185,7 +185,7 @@ networks:
 - **PDF Content Extraction**: Automatically generate educational content from uploaded PDFs.
 
 ---
-## 🎬 Demo Video
+## 🎬 App Demo Video
 
 [Video demo](https://github.com/user-attachments/assets/e03d0ab7-6110-43e2-bef9-10c5f814a5d2)
 
