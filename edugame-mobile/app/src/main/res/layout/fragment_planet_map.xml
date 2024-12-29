@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/space_background"
+    tools:context=".activities.PlanetMapActivity">
+
+    <!-- Header Section -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Explore the Planets"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Progress Bar -->
+    <TextView
+        android:id="@+id/tvProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5/27 courses completed"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Scrollable Space Map -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/tvProgress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <!-- Space Map Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Sun -->
+            <ImageView
+                android:id="@+id/planetSun"
+                android:layout_width="298dp"
+                android:layout_height="291dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Sun"
+                android:src="@drawable/sun" />
+            <TextView
+                android:id="@+id/sunName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sun"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <ProgressBar
+                android:id="@+id/sunBar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:progress="60"
+                android:max="100"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+            <!-- Mercury -->
+            <ImageView
+                android:id="@+id/planetMercury"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Mercury"
+                android:src="@drawable/mercury" />
+            <TextView
+                android:id="@+id/mercuryName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+
+                android:text="Mercury"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <ProgressBar
+                android:id="@+id/mercuryBar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:progress="60"
+                android:max="100"
+                android:layout_marginLeft="100dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+
+            <!-- Venus -->
+            <ImageView
+                android:id="@+id/planetVenus"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Venus"
+                android:src="@drawable/venus" />
+            <TextView
+                android:id="@+id/venusName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+
+                android:text="Venus"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <ProgressBar
+                android:id="@+id/venusBar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:progress="60"
+                android:max="100"
+                android:layout_marginRight="100dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+
+            <!-- Earth -->
+            <ImageView
+                android:id="@+id/planetEarth"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/earth"
+                android:contentDescription="Earth"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="100dp" />
+            <TextView
+                android:id="@+id/earthName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+
+                android:text="Earth"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+
+            <ProgressBar
+                android:id="@+id/earthBar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:progress="60"
+                android:max="100"
+                android:layout_marginLeft="100dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+
+            <!-- Mars -->
+            <ImageView
+                android:id="@+id/planetMars"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Mars"
+                android:src="@drawable/mars" />
+            <TextView
+                android:id="@+id/marsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+
+                android:text="Mars"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <ProgressBar
+                android:id="@+id/marsBar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:progress="60"
+                android:max="100"
+                android:layout_marginRight="100dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+
+            <!-- Jupiter -->
+            <ImageView
+                android:id="@+id/planetJupiter"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/jupiter"
+                android:contentDescription="Jupiter"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="100dp" />
+            <TextView
+                android:id="@+id/jupiterName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+
+                android:text="Jupiter"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <ProgressBar
+                android:id="@+id/jupiterBar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:progress="60"
+                android:max="100"
+                android:layout_marginLeft="100dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+
+            <!-- Saturn -->
+            <ImageView
+                android:id="@+id/planetSaturn"
+                android:layout_width="244dp"
+                android:layout_height="239dp"
+                android:layout_marginRight="100dp"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Saturn"
+                android:src="@drawable/saturn" />
+            <TextView
+                android:id="@+id/saturnName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+
+                android:text="Saturn"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <ProgressBar
+                android:id="@+id/saturnBar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:progress="60"
+                android:max="100"
+                android:layout_marginRight="100dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+
+            <!-- Uranus -->
+            <ImageView
+                android:id="@+id/planetUranus"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/uranus"
+                android:contentDescription="Uranus (Locked)"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="100dp" />
+            <TextView
+                android:id="@+id/uranusName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+
+                android:text="Uranus"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <ProgressBar
+                android:id="@+id/uranusBar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:progress="60"
+                android:max="100"
+                android:layout_marginLeft="100dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+
+            <!-- Neptune -->
+            <ImageView
+                android:id="@+id/planetNeptune"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/neptune"
+                android:contentDescription="Neptune"
+                android:layout_marginBottom="16dp"
+                android:layout_marginRight="100dp" />
+            <TextView
+                android:id="@+id/neptuneName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="100dp"
+
+                android:text="Neptune"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp" />
+
+            <ProgressBar
+                android:id="@+id/neptuneBar"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:progress="60"
+                android:max="100"
+                android:layout_marginRight="100dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

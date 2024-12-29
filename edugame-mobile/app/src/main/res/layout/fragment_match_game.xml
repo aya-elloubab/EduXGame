@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    >
+
+    <!-- Score Display -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/scoreCard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:padding="8dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/scoreTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score: 0"
+            android:textSize="20sp"
+            android:textColor="?attr/colorPrimary"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Complete Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/completeButtonMatch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete"
+        android:layout_marginTop="8dp"
+        app:cornerRadius="8dp"
+        app:backgroundTint="?attr/colorPrimary"
+        android:textColor="?attr/colorOnPrimary" />
+
+    <!-- Match Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginTop="16dp">
+
+        <!-- Elements RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/elementsRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="?attr/colorSurface" />
+
+        <!-- Match Texts RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/matchTextsRecyclerView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="8dp" />
+    </LinearLayout>
+
+</LinearLayout>

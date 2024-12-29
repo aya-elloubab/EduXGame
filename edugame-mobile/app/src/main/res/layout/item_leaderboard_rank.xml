@@ -1,0 +1,76 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="16dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:rippleColor="?attr/colorControlHighlight"
+    app:strokeColor="?attr/colorPrimaryVariant"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <!-- Rank Text -->
+        <TextView
+            android:id="@+id/rank_text"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="4"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="?attr/colorOnBackground"
+            android:background="@drawable/rank_circle" />
+
+        <!-- Avatar Image -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/avatar_rank"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:src="@drawable/profile"
+            app:civ_border_width="2dp"
+            app:civ_border_color="?attr/colorSurfaceVariant" />
+
+        <!-- Player Details -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <!-- Player Name -->
+            <TextView
+                android:id="@+id/name_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Player Name"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="?attr/colorOnBackground" />
+
+            <!-- Player Points -->
+            <TextView
+                android:id="@+id/points_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000 pts"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:textColor="?attr/colorOnSurfaceVariant" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

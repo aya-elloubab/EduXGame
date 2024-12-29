@@ -1,0 +1,220 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    app:cardCornerRadius="24dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:orientation="vertical"
+        android:background="@drawable/podium_background">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leaderboard"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#1A237E"
+            android:layout_gravity="center"
+            android:layout_marginTop="14dp"
+            android:elevation="4dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="7dp">
+
+            <!-- Second Place -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="60dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/crown_selver"
+                    android:layout_marginBottom="-25dp"
+                    android:elevation="12dp"
+                    android:translationZ="12dp"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/avatar_second"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/profile"
+                        app:civ_border_width="3dp"
+                        app:civ_border_color="#E0E0E0"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/txtl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2nd Place"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#455A64"/>
+
+                <TextView
+                    android:id="@+id/name_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1250 pts"
+                    android:textAlignment="center"
+                    android:textColor="#546E7A"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:id="@+id/score_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1250 pts"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="#546E7A"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+            <!-- First Place -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/crown"
+                    android:layout_marginBottom="-25dp"
+                    android:elevation="12dp"
+                    android:translationZ="12dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="55dp"
+                    app:cardElevation="12dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/avatar_first"
+                        android:layout_width="110dp"
+                        android:layout_height="110dp"
+                        android:src="@drawable/profile"
+                        app:civ_border_width="4dp"
+                        app:civ_border_color="#FFD700"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/lab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Champion"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#1A237E"/>
+
+                <TextView
+                    android:id="@+id/name_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1500 pts"
+                    android:textAlignment="center"
+                    android:textColor="#1A237E"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:id="@+id/score_first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1500 pts"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="#1A237E"
+                    android:textSize="18sp"/>
+            </LinearLayout>
+
+            <!-- Third Place -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_marginTop="80dp">
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/crown_bronz"
+                    android:layout_marginBottom="-25dp"
+                    android:elevation="12dp"
+                    android:translationZ="12dp"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="40dp"
+                    app:cardElevation="8dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/avatar_third"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        android:src="@drawable/profile"
+                        app:civ_border_width="3dp"
+                        app:civ_border_color="#CD7F32"/>
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/labname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3rd Place"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="12dp"
+                    android:textColor="#455A64"/>
+
+                <TextView
+                    android:id="@+id/name_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1100 pts"
+                    android:textAlignment="center"
+                    android:textColor="#546E7A"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"/>
+
+                <TextView
+                    android:id="@+id/score_third"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="1100 pts"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="#546E7A"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

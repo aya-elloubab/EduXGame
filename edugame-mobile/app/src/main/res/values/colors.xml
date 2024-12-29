@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Light Theme Colors -->
+    <color name="space_blue">#2563EB</color>  <!-- Bright space blue -->
+    <color name="space_purple">#9333EA</color>  <!-- Vivid space purple -->
+    <color name="light_background">#FFFFFF</color>
+    <color name="light_surface">#F8FAFC</color>
+    <color name="light_text">#1E293B</color>
+    <color name="light_text_secondary">#64748B</color>
+
+    <!-- Dark Theme Colors -->
+    <color name="space_blue_dark">#60A5FA</color>  <!-- Lighter space blue for dark mode -->
+    <color name="space_purple_dark">#C084FC</color>  <!-- Lighter space purple for dark mode -->
+    <color name="dark_background">#0F172A</color>
+    <color name="dark_surface">#1E293B</color>
+    <color name="dark_text">#F8FAFC</color>
+    <color name="dark_text_secondary">#CBD5E1</color>
+
+    <!-- Answer Selection Colors -->
+    <color name="selected_answer">#D1C4E9</color> <!-- Light purple -->
+    <color name="unselected_answer">#FFFFFF</color> <!-- White -->
+
+    <!-- Correct and Incorrect Answer Colors -->
+    <color name="correct">#4CAF50</color> <!-- Green -->
+    <color name="incorrect">#F44336</color> <!-- Red -->
+    </resources>

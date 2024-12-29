@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EduGame" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/space_blue_dark</item>
+        <item name="colorPrimaryVariant">@color/space_purple_dark</item>
+
+        <!-- Background colors -->
+        <item name="android:windowBackground">@color/dark_background</item>
+        <item name="colorSurface">@color/dark_surface</item>
+
+        <!-- Text colors -->
+        <item name="android:textColor">@color/dark_text</item>
+        <item name="android:textColorSecondary">@color/dark_text_secondary</item>
+        <item name="colorOnBackground">@color/dark_text</item> <!-- Dark mode -->
+
+    </style>
+</resources>

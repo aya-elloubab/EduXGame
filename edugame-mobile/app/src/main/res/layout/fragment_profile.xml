@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?attr/colorSurface">
+    <!-- Avatar List Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Avatars"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="18dp"
+        android:textColor="?attr/colorOnBackground" />
+
+    <!-- Highest Collected Avatar Section -->
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="24dp">
+
+            <ImageView
+                android:id="@+id/highest_collected_avatar"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:contentDescription="Highest Collected Avatar"
+                android:scaleType="centerCrop"
+                android:clipToOutline="true"
+                android:elevation="4dp" />
+
+            <TextView
+                android:id="@+id/highest_collected_avatar_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Avatar Name"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginTop="12dp"
+                android:textAlignment="center"
+                android:textColor="?attr/colorOnBackground" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Avatar List Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next goals"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp"
+        android:textColor="?attr/colorOnBackground" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/avatar_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp" />
+</LinearLayout>

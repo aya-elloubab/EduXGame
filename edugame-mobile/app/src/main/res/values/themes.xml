@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.EduGame" parent="Theme.Material3.DayNight.NoActionBar">
+            <!-- Primary brand color -->
+            <item name="colorPrimary">@color/space_blue</item>
+            <item name="colorPrimaryVariant">@color/space_purple</item>
+
+            <!-- Background colors -->
+            <item name="android:windowBackground">@color/light_background</item>
+            <item name="colorSurface">@color/light_surface</item>
+
+            <!-- Text colors -->
+            <item name="android:textColor">@color/light_text</item>
+            <item name="android:textColorSecondary">@color/light_text_secondary</item>
+        <item name="colorOnBackground">@color/light_text</item> <!-- Light mode -->
+
+    </style>
+
+    <style name="Theme.EduGame" parent="Base.Theme.EduGame" />
+</resources>
