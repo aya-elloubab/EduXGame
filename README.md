@@ -1,45 +1,46 @@
-﻿# EduGame: Gamified Learning Platform for Secondary Education in Morocco
+# EduGame: Gamified Learning Platform for Secondary Education in Morocco
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/ffacb129-d7aa-4b10-8103-3982691f3b71" width="300" alt="EduGame Logo">
 </div>
+
 EduGame is a gamified micro-learning platform aimed at enhancing student engagement and retention through interactive lessons, quizzes, and games. Designed for secondary-level education in Morocco, the platform combines technology and gamification to deliver a unique educational experience.
 
 ---
 
-## Table of Contents
+## 📁 Table of Contents
 
-- [Software Architecture](#software-architecture)
-- [Docker Configuration](#docker-configuration)
-- [Frontend](#frontend)
-- [Backend](#backend)
-- [Getting Started](#getting-started)
-- [Features](#features)
-- [Contributing](#contributing)
-- [Future Enhancements](#future-enhancements)
+- [🗰 Software Architecture](#-software-architecture)
+- [🐳 Docker Configuration](#-docker-configuration)
+- [💻 Frontend](#-frontend)
+- [🔙 Backend](#-backend)
+- [🚀 Getting Started](#-getting-started)
+- [✨ Features](#-features)
+- [🤝 Contributing](#-contributing)
+- [🌟 Future Enhancements](#-future-enhancements)
+- [📜 License](#-license)
 
 ---
 
-## Software Architecture
+## 🗰 Software Architecture
 
-![EduGame Architecture]![WhatsApp Image 2024-12-29 at 03 31 51_40bfa45c](https://github.com/user-attachments/assets/c9bbde5b-7904-4613-9fe2-424f01733194)
-
+![EduGame Architecture](https://github.com/user-attachments/assets/c9bbde5b-7904-4613-9fe2-424f01733194)
 
 The EduGame platform consists of the following components:
 
-- Frontend: Developed using Next.js and Tailwind CSS for responsive and dynamic UI.
-- Backend: Built with Spring Boot and Flask, offering APIs for data management and file interactions.
-- Database: MySQL is used for persistent data storage.
-- Mobile Support: Android client developed with Java, offering native functionality.
-- APIs: RESTful APIs enable communication between services.
+- **Frontend**: Developed using Next.js and Tailwind CSS for responsive and dynamic UI.
+- **Backend**: Built with Spring Boot and Flask, offering APIs for data management and file interactions.
+- **Database**: MySQL is used for persistent data storage.
+- **Mobile Support**: Android client developed with Java, offering native functionality.
+- **APIs**: RESTful APIs enable communication between services.
 
 ---
 
-## Docker Configuration
+## 🐳 Docker Configuration
 
-The system is containerized for consistent deployment. Below is an example of the docker-compose.yml configuration:
+The system is containerized for consistent deployment. Below is an example of the `docker-compose.yml` configuration:
 
-yaml
+```yaml
 version: "3.8"
 
 services:
@@ -99,14 +100,13 @@ services:
 networks:
   edugame-network:
     driver: bridge
-
-
+```
 
 ---
 
-## Frontend
+## 💻 Frontend
 
-### Technologies Used
+### 🌐 Technologies Used
 
 - **Next.js**: Modern React framework for building interactive web applications.
 - **Tailwind CSS**: Utility-first CSS framework for styling.
@@ -114,22 +114,22 @@ networks:
 - **XML**: Used for defining Android UI layouts.
 - **Lottie**: Adds engaging animations to the interface.
 
-### Highlights
+### 🔑 Highlights
 
 - Dynamic dashboards for managing quizzes, leaderboards, and rewards.
 - Real-time feedback to track user progress and achievements.
 
 ---
 
-## Backend
+## 🔙 Backend
 
-### Technologies Used
+### 🛠 Technologies Used
 
 - **Spring Boot**: Manages core business logic and API endpoints.
 - **Flask**: Processes PDF uploads with LangChain for advanced content extraction.
 - **MySQL**: Stores user data, quiz results, and progress.
 
-### Key Features
+### 🔒 Key Features
 
 1. **Authentication and Security**:
    - JWT-based authentication for secure access.
@@ -139,42 +139,42 @@ networks:
 
 ---
 
-## Getting Started
+## 🚀 Getting Started
 
-### Prerequisites
+### ✅ Prerequisites
 
 1. Install [Docker](https://www.docker.com/).
-2. Install Node.js (version 16 or later).
-3. Install Java (JDK 17).
+2. Install [Node.js](https://nodejs.org/) (version 16 or later).
+3. Install [Java (JDK 17)](https://adoptopenjdk.net/).
 
-### Steps
+### 🛠 Steps
 
 1. Clone the repository:
-   bash
+   ```bash
    git clone https://github.com/aya-elloubab/EduGame.git
    cd EduGame
-   
+   ```
 
 2. Build and run the backend:
-   bash
+   ```bash
    cd spring-boot
    ./mvnw spring-boot:run
-   
+   ```
 
 3. Start the frontend:
-   bash
+   ```bash
    cd frontend
    npm install
    npm run dev
-   
+   ```
 
-4. Access the app at http://localhost:3000.
-5. Start android app:
-     build and run app on device
+4. Access the app at [http://localhost:3000](http://localhost:3000).
+5. Start Android app:
+   - Build and run the app on your device.
 
 ---
 
-## Features
+## ✨ Features
 
 - **Gamified Quizzes**: Engage students with interactive and fun quizzes.
 - **Adaptive Learning**: Personalized content tailored to individual progress.
@@ -183,33 +183,36 @@ networks:
 - **Progress Tracking**: Real-time insights into student achievements and milestones.
 - **PDF Content Extraction**: Automatically generate educational content from uploaded PDFs.
 
-
 ---
-### Example: Chapter Creation
+
+## 🛠 Example: Chapter Creation
+
 1. Navigate to the admin panel.
 2. Upload a PDF containing course material.
 3. Review and edit the extracted content (quizzes, flip cards, etc.) in the chapter management page.
 4. Save the chapter for learners to access.
+
 ---
-## Contributing
+
+## 🤝 Contributing
 
 Contributions are welcome! Please fork this repository and create a pull request.
 
-### Contributors
+### 👩‍💻 Contributors
 
 - Elloubab Aya ([GitHub](https://github.com/aya-elloubab))
 - Ait Ouahda Younes ([GitHub](https://github.com/YounesAO))
 
 ---
 
-## Future Enhancements
+## 🌟 Future Enhancements
 
-1. AI Recommendations: Personalized suggestions based on performance.
-2. Offline Mode: Enable app access without internet.
-3. Multi-language Support: Extend the platform to other regions.
+1. **AI Recommendations**: Personalized suggestions based on performance.
+2. **Offline Mode**: Enable app access without internet.
+3. **Multi-language Support**: Extend the platform to other regions.
 
 ---
 
-## License
+## 📜 License
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
