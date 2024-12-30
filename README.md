@@ -25,7 +25,7 @@ EduGame is a gamified micro-learning platform aimed at enhancing student engagem
 
 ## 🗰 Software Architecture
 
-![EduGame Architecture](https://github.com/user-attachments/assets/55edd9ab-3acf-4a0e-b5ab-c5143c3f4fc2)
+![EduGame Architecture](https://github.com/user-attachments/assets/e7a14719-bdc5-4819-9f97-2c6784783a41)
 
 The EduGame platform consists of the following components:
 
