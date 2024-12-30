@@ -1,7 +1,7 @@
 # EduGame: Gamified Learning Platform for Secondary Education in Morocco
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/ffacb129-d7aa-4b10-8103-3982691f3b71" width="300" alt="EduGame Logo">
+  <img src="https://github.com/user-attachments/assets/304d6782-3d99-4942-a05c-278a8c8d1fad" width="300" alt="EduGame Logo">
 </div>
 
 EduGame is a gamified micro-learning platform aimed at enhancing student engagement and retention through interactive lessons, quizzes, and games. Designed for secondary-level education in Morocco, the platform combines technology and gamification to deliver a unique educational experience.
