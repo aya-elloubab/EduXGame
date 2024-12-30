@@ -187,7 +187,8 @@ networks:
 ---
 ## 🎬 App Demo Video
 
-[Video demo](https://github.com/user-attachments/assets/e03d0ab7-6110-43e2-bef9-10c5f814a5d2)
+[Video demo](https://github.com/user-attachments/assets/3103daf1-e8c1-4579-bad8-34b099c8ec02
+)
 
 ---
 
