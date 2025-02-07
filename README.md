@@ -1,10 +1,10 @@
-# EduGame: Gamified Learning Platform for Secondary Education in Morocco
+# EduXGame: Gamified Learning Platform for Secondary Education in Morocco
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/304d6782-3d99-4942-a05c-278a8c8d1fad" width="300" alt="EduGame Logo">
+  <img src="https://github.com/user-attachments/assets/304d6782-3d99-4942-a05c-278a8c8d1fad" width="300" alt="EduXGame Logo">
 </div>
 
-EduGame is a gamified micro-learning platform aimed at enhancing student engagement and retention through interactive lessons, quizzes, and games. Designed for secondary-level education in Morocco, the platform combines technology and gamification to deliver a unique educational experience.
+EduXGame is a gamified micro-learning platform aimed at enhancing student engagement and retention through interactive lessons, quizzes, and games. Designed for secondary-level education in Morocco, the platform combines technology and gamification to deliver a unique educational experience.
 
 ---
 
@@ -25,9 +25,9 @@ EduGame is a gamified micro-learning platform aimed at enhancing student engagem
 
 ## 🗰 Software Architecture
 
-![EduGame Architecture](https://github.com/user-attachments/assets/e7a14719-bdc5-4819-9f97-2c6784783a41)
+![EduXGame Architecture](https://github.com/user-attachments/assets/e7a14719-bdc5-4819-9f97-2c6784783a41)
 
-The EduGame platform consists of the following components:
+The EduXGame platform consists of the following components:
 
 - **Frontend**: Developed using Next.js and Tailwind CSS for responsive and dynamic UI.
 - **Backend**: Built with Spring Boot and Flask, offering APIs for data management and file interactions.
@@ -152,8 +152,8 @@ networks:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/aya-elloubab/EduGame.git
-   cd EduGame
+   git clone https://github.com/aya-elloubab/EduXGame.git
+   cd EduXGame
    ```
 
 2. Build and run the backend:
