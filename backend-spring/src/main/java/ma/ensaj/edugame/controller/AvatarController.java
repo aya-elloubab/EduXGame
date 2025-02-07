@@ -4,6 +4,7 @@ import ma.ensaj.edugame.dto.StudentAvatarDTO;
 import ma.ensaj.edugame.entity.Avatar;
 import ma.ensaj.edugame.entity.StudentAvatar;
 import ma.ensaj.edugame.service.AvatarService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,12 +14,8 @@ import java.util.List;
 @RequestMapping("/api/avatars")
 public class AvatarController {
 
-    private final AvatarService avatarService;
-
-    public AvatarController(AvatarService avatarService) {
-        this.avatarService = avatarService;
-    }
-
+    @Autowired
+    private  AvatarService avatarService;
     // CRUD Endpoints for Avatars
     @GetMapping
     public ResponseEntity<List<Avatar>> getAllAvatars() {

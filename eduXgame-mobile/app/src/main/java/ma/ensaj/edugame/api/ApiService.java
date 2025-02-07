@@ -73,8 +73,8 @@ public interface ApiService {
     Call<Double> getCourseProgress(@Query("studentId") Long studentId, @Query("courseId") Long chapterId);
     @GET("/api/chapter-progress/subject-progress")
     Call<Double> getSubjectProgress(@Query("studentId") Long studentId, @Query("subjectId") Long chapterId);
-    @GET("/api/matches")
-    Call<List<Match>> getMatchesByChapter(@Query("chapterId") Long chapterId);
+    @GET("/api/matches/chapter/{chapterId}")
+    Call<List<Match>> getMatchesByChapter(@Path("chapterId") Long chapterId);
 
     @POST("/api/chapter-progress/complete/match-game")
     Call<Void> submitMatchScore(@Query("studentId") Long studentId, @Query("chapterId") Long chapterId, @Query("score") int score);

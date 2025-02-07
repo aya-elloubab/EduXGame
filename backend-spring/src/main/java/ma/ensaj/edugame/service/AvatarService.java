@@ -17,9 +17,14 @@ import java.util.stream.Collectors;
 @Service
 public class AvatarService {
 
-    private final AvatarRepository avatarRepository;
-    private final StudentAvatarRepository studentAvatarRepository;
-    private final StudentRepository studentRepository;
+    @Autowired
+    private AvatarRepository avatarRepository;
+
+    @Autowired
+    private StudentAvatarRepository studentAvatarRepository;
+
+    @Autowired
+    private  StudentRepository studentRepository;
 
     @Autowired
     private PointsService pointsService;
