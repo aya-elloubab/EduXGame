@@ -1,7 +1,7 @@
 # EduXGame: Gamified Learning Platform for Secondary Education in Morocco
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/304d6782-3d99-4942-a05c-278a8c8d1fad" width="300" alt="EduXGame Logo">
+  <img src="https://github.com/user-attachments/assets/d800219c-2365-4984-8c2f-15cdce6411c2" width="300" alt="EduXGame Logo">
 </div>
 
 EduXGame is a gamified micro-learning platform aimed at enhancing student engagement and retention through interactive lessons, quizzes, and games. Designed for secondary-level education in Morocco, the platform combines technology and gamification to deliver a unique educational experience.
