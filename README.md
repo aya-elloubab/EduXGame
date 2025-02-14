@@ -209,8 +209,8 @@ Contributions are welcome! Please fork this repository and create a pull request
 
 - Elloubab Aya ([GitHub](https://github.com/aya-elloubab))
 - Ait Ouahda Younes ([GitHub](https://github.com/YounesAO))
+- Lachgar Mohamed ([ResearchGate](https://www.researchgate.net/profile/Mohamed-Lachgar))
 - Achour Khaoula
-- Lachgar Mohamed
 - Laannaoui My Driss
 - Ourahay Mustapha
 
